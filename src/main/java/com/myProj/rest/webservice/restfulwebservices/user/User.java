@@ -17,6 +17,7 @@ public class User {
 		this.id = id;
 		this.name = name;
 		this.birthDate = birthDate;
+		
 	}
 	public Integer getId() {
 		return id;
