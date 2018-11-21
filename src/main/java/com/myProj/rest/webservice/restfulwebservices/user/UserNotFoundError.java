@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class UserNotFoundError extends RuntimeException {
 
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public UserNotFoundError(String message) {
 		super(message);
 		

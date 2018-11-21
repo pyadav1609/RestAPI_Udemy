@@ -11,16 +11,16 @@ public class UserDaoService {
 
 	private static List<User> userList=new ArrayList<>();
 	static {
-		userList.add(new User(101, "jack", new Date()));
-		userList.add(new User(102, "adam", new Date()));
-		userList.add(new User(103, "Eve", new Date()));
+		userList.add(new User(101, "Apple", new Date()));
+		userList.add(new User(102, "Samsung", new Date()));
+		userList.add(new User(103, "OnePlus", new Date()));
 	}
 
 	private int UserCount=103;
 	
-	/*public List<User>findAll(){
+	public List<User>findAll(){
 		return userList;
-	}*/
+	}
 	
 	public Integer save(User user) {
 		if(user.getId()==null && !userList.contains(user)) {
